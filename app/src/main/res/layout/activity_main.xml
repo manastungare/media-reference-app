@@ -9,7 +9,7 @@
 
   <fragment
     android:id="@+id/media_fragment"
-    android:name="com.example.mediareferenceapp.MainFragment"
+    android:name="com.example.mediareferenceapp.MediaFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent" />
 </FrameLayout>

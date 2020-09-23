@@ -22,7 +22,7 @@ import com.example.mediareferenceapp.State.PLAYING
 import java.lang.System.currentTimeMillis
 
 /** Fragment that houses a [SimulatedPlayer] and ties it to [MediaSession] */
-class MainFragment : Fragment(), SimulatedPlayer.PlaybackListener, Logger {
+class MediaFragment : Fragment(), SimulatedPlayer.PlaybackListener, Logger {
   private val player = SimulatedPlayer(this as Logger)
 
   private lateinit var textViewLog: TextView

@@ -4,15 +4,15 @@ import android.os.Bundle
 import android.view.KeyEvent
 import androidx.fragment.app.FragmentActivity
 
-/** Loads [MainFragment]. */
+/** Loads [MediaFragment]. */
 class MainActivity : FragmentActivity(), Logger {
 
-  private lateinit var mainFragment: MainFragment
+  private lateinit var mediaFragment: MediaFragment
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
-    mainFragment = supportFragmentManager.findFragmentById(R.id.media_fragment) as MainFragment
+    mediaFragment = supportFragmentManager.findFragmentById(R.id.media_fragment) as MediaFragment
   }
 
   override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
@@ -25,7 +25,7 @@ class MainActivity : FragmentActivity(), Logger {
     return super.onKeyUp(keyCode, event)
   }
 
-  override fun log(tag: String, message: String) = mainFragment.log(TAG, message)
+  override fun log(tag: String, message: String) = mediaFragment.log(TAG, message)
 
   companion object {
     private const val TAG = "MainActivity"
